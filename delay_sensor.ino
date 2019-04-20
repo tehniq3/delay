@@ -33,7 +33,7 @@ Serial.println("LED is OFF !");
 
 void loop() 
 {
-if ((digitalRead(pinsensor) == HIGH) and (aprins == 0)) // if button was pushed and led is off
+if ((digitalRead(pinsensor) == HIGH) and (aprins == 0)) // if sensor was triggered and led is off
 {
   Serial.println("Sensor is triggered!");
   digitalWrite(pinled, HIGH); // led on
